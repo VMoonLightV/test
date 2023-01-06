@@ -1,28 +1,132 @@
-<!DOCTYPE html><!--说明格式-->
-<html lang="en"><!--说明主要语言-->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8"><!--说明字符集-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--用于兼容老浏览器（可有可无）-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--手机上显示兼容-->
-    <title>Document</title>
-</head>
-
-<body style="display: flex;flex-direction: column;align-items: center;">
-    <img src="yae.jpg" width="800">
-    <p class="hezi">TEST</p>
-    <p class="hezi">TEST</p>
-    <p class="hezi">TEST</p>
-    <p>TEST</p>
-    <p>TEST</p>
-    <input value="kkk">
+    <title>布局</title>
     <style>
-        .hezi {
-            color: aqua;
-            font-size: large;
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: beige;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .left-up {
+            flex: 1;
+            margin: 4px;
+        }
+
+        .left-body {
+            display: flex;
+            flex: 1;
+            background-color: gold;
+            height: 150px;
+        }
+
+        .guide {
+            padding: 5px;
+            border-bottom: 2px solid snow;
+            margin: 10px;
+            background-color: antiquewhite;
+            font-size: 18px;
+            color: rgb(red, green, blue);
+        }
+
+        @media (max-width:600px) {
+            /* .side {
+                display: none;
+            } */
+
+            .shuju {
+                flex-direction: column;
+            }
+
+            .neirong {
+                flex-direction: column;
+            }
         }
     </style>
+
+
+</head>
+
+<body class="flex">
+    <div style="width: 200px; background-color:rgb(65, 208, 216);" class="side">
+        <p>边栏</p>
+        <div style="justify-content: center;display: flex;padding: 20px;background-color: plum;">
+            <img src="yae.jpg" style="width: 180px; ">
+        </div>
+        <div class="guide">Guidance</div>
+        <div class="guide">Guidance</div>
+        <div class="guide">Guidance</div>
+        <div class="guide">Guidance</div>
+        <div class="guide">Guidance</div>
+    </div>
+
+    <div style="flex:1;flex-direction: column;">
+        <div style="height: 80px;background-color: burlywood;z-index: 2;">
+            <p>头栏</p>
+        </div>
+
+        <div style="flex:1; display: flex;" class="neirong">
+            <!--left-->
+            <div style="flex: 3; flex-direction: column; ">
+
+
+                <div class="shuju" style="display:flex; background-color:green; ">
+                    <div class="left-up">
+                        <p>数据</p>
+                    </div>
+                    <div class="left-up">
+                        <p>数据</p>
+                    </div>
+                    <div class="left-up">
+                        <p>数据</p>
+                    </div>
+                    <div class="left-up">
+                        <p>数据</p>
+                    </div>
+                </div>
+
+
+                <div style="display:flex; height: px;flex-direction: column;">
+                    <div class="left-body">
+                        <p>左边底1</p>
+                    </div>
+                    <div class="left-body">
+                        <p>左边底2</p>
+                    </div>
+                    <div class="left-body">
+                        <p>左边底3</p>
+                    </div>
+                    <div class="left-body">
+                        <p>左边底4</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--right-->
+            <div style="flex: 1;">
+
+                <div style="height: 150px; background-color:aquamarine">
+                    <p>右栏</p>
+                </div>
+                <div style="height: 300px; background-color: antiquewhite; ">
+                    <p>右栏中</p>
+                </div>
+                <div style="height: 180px;">
+                    <p>右栏底</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
