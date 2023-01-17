@@ -20,19 +20,21 @@
         .left-up {
             flex: 1;
             margin: 4px;
-            background-color: aquamarine;
+            background-color: rgb(162, 244, 203);
+            text-align: center;
         }
 
         .left-body {
             display: flex;
-            background-color: gold;
-            height: 200px;
-            justify-content: center;
+            background-color: rgb(212, 210, 159);
+            margin: 5px;
+            border: 2px solid silver;
+            padding: 4px;
         }
 
         .guide {
             padding: 5px;
-            border-bottom: 2px solid snow;
+            border-bottom: 3px solid snow;
             margin: 10px;
             background-color: antiquewhite;
             font-size: 18px;
@@ -41,15 +43,11 @@
 
         .normal {
             margin: 5px;
-            border: 2px silver;
+            border: 2px solid silver;
             padding: 4px;
         }
 
         @media (max-width:600px) {
-            /* .side {
-                display: none;
-            } */
-
             .shuju {
                 flex-direction: column;
             }
@@ -65,7 +63,7 @@
 
 <body class="flex" style="font-family: 楷体;">
 
-    <div style=" width: 200px;text-align: right; background-color:rgb(0, 255, 255);justify-content: center;"
+    <div style="height: 700px; width: 200px;text-align: right; background-color:rgb(0, 255, 255);justify-content: center;"
         class="side">
         <div>
             <p style="padding-left: 20px;justify-content:left;display: flex;font-family: 楷体;">时间:</p>
@@ -93,20 +91,27 @@
         </div>
         <div style="justify-content: center;display: flex;padding: 20px;
             background: linear-gradient(rgb(0, 255, 255),rgb(152, 78, 255));">
-            <img src="/photo/photo1.jpg" style="width: 180px; ">
+            <img src="photo/photo1.jpg" style="width: 180px;border: 2px solid silver; ">
         </div>
         <div style="background: linear-gradient(rgb(152, 78, 255),rgb(0, 255, 255));height: 40px;"></div>
-        <div class="guide">快速导航：</div>
-        <div class="guide">Guidance</div>
-        <div class="guide">Guidance</div>
-        <div class="guide">Guidance</div>
-        <div class="guide">Guidance</div>
+        <div class="guide" style="text-align: center;">
+            <p style="text-align: left;padding-left: 10px;">礼物：</p>
+            <p>各种二向箔</p>
+            <p>美女写真</p>
+            <p>保温杯、手机壳</p>
+            <p>知识的阶梯</p>
+            <p>书画</p>
+            <p>小宇宙</p>
+            <p style="font-family: 'Times New Roman', Times, serif;">Happiness</p>
+        </div>
+        <div style="background: linear-gradient(rgb(0, 255, 255),rgb(245,245,220));height: 80px;"></div>
+
     </div>
 
     <div style=" flex:1;flex-direction: column;">
-        <div style="height: 80px;background-color: burlywood;z-index: 2; 
+        <div style="background-color: burlywood;z-index: 2; 
                     margin: 8px;border: 2px;padding: 2px;">
-            <p style="padding-top: 5px; padding-left: 30px; font-size: 20px;color: aliceblue;
+            <p style="text-align: center;margin: 30px; font-size: 20px;color: aliceblue;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Wrj&Lyy's
                 little world</p>
         </div>
@@ -117,36 +122,38 @@
 
 
                 <div class="shuju" style="display:flex;">
-                    <div class="left-up normal" style="text-align: center;">
-                        <p>
-                            一起去过
-                        </p>
+                    <div class="left-up normal">
+                        <p>死生契阔</p>
                     </div>
                     <div class="left-up normal">
-                        <p>数据</p>
+                        <p>与子成说</p>
                     </div>
                     <div class="left-up normal">
-                        <p>数据</p>
+                        <p>执子之手</p>
                     </div>
                     <div class="left-up normal">
-                        <p>数据</p>
+                        <p>与子偕老</p>
                     </div>
                 </div>
 
+                <div style="background: linear-gradient(rgb(245,245,220),rgb(233, 207, 255));height: 20px;"></div>
 
-                <div style="display:flex;flex:1; flex-direction: column;">
-                    <div class="left-body normal">
-                        <img src="/photo/photo.jpg" style="height: 200px;">
-                    </div>
-                    <div class="left-body normal">
-                        <img src="/photo/photo.jpg" style="height: 200px;">
-                    </div>
-                    <div class="left-body normal">
-                        <img src="/photo/photo.jpg" style="height: 200px;">
-                    </div>
-                    <div class="left-body normal">
-                        <img src="/photo/photo.jpg" style="height: 200px;">
-                    </div>
+                <div style="display:flex;flex:1; flex-direction: column;
+                background: linear-gradient(rgb(233, 207, 255),rgb(212, 252, 254));
+                align-items: center;">
+
+                    <img src="photo/photo2.jpg" class="left-body" style="width: 62%;">
+                    <img src="photo/photo3.jpg" class="left-body" style="width: 62%;">
+                    <img src="photo/photo4.jpg" class="left-body" style="width: 62%;">
+                    <img src="photo/photo5.jpg" class="left-body" style="width: 62%;">
+
+                </div>
+                <div style="background: linear-gradient(rgb(212, 252, 254),rgb(245,245,220));height: 20px;"></div>
+                <div style="text-align: center ;">
+                    <a href="https://baike.baidu.com/item/%E7%8E%8B%E6%B6%A6%E4%BD%B3/60981162?fr=aladdin">
+                        神奇链接1</a><br>
+                    <a href="https://mp.weixin.qq.com/s/bCsqCSFn_gEWDEozrwUJoA">神奇链接2</a><br>
+                    <a href="https://mp.weixin.qq.com/s/3EgDbZheErm1t4142kkQIg">神奇链接3</a>
                 </div>
             </div>
 
@@ -154,35 +161,37 @@
             <!--right-->
             <div style="flex: 1;">
 
-                <div style="height: 150px; background-color: skyblue;" class="normal">
-                    <p>礼物</p>
+                <div style=" background-color: rgb(237, 237, 237);text-align: center;" class="normal">
+                    <img src="photo/photo8.jpg" style="width: 100%;">
+
                 </div>
-                <div style="height: 300px; background-color: antiquewhite; " class="normal">
+                <div style="height: 360px; background-color: antiquewhite; padding-left: 10px;" class="normal">
                     <p>时间线</p>
-                    <p>2021.12.9定</p>
-                    <p>2022.</p>
-                    <p>2022.6.7安慰高考数学</p>
+                    <p>2021.12.9初定</p>
+                    <p>2022.2.1新年"宝贝"</p>
+                    <p>2022.6.7高考</p>
+                    <p>2022.7高分堂</p>
+                    <p>2022.8.3川西大环线</p>
+                    <p>2022.9开学</p>
+                    <p>2022.12回中山</p>
+                    <p>2023.1.9剧本杀</p>
+                    <p>2023.1.22春节</p>
                 </div>
-                <div style="height: 180px; background-color: burlywood; " class="normal">
-                    <p>未来计划</p>
-                    <input id="plan" style="height: 80px;margin: 5px;display: flex;background-color: aliceblue;
+                <div style="height: 180px;padding-left: 10px; background-color: burlywood; " class="normal">
+                    <p>未来计划：</p>
+                    <input id="plan" style="height: 80px;display: flex;background-color: aliceblue;
                     border: 2px;">
-                    <button onclick="submit()">SAVE</button>
+                    <button onclick="submit()" style="margin-top:5px;">SAVE</button>
 
                     <script>
                         function submit() {
                             let plan_words = window.document.getElementById("plan").value;
-                            window.document.write("功能待开发...")
+                            window.document.write("已知计划：" + "<br>" + plan_words + "<br><br>but<br>" + "记录功能待开发...QwQ")
                         }
                     </script>
 
-
-                    <form name="input" action="plan.php" method="get">
-                        Username: <input type="text" name="user">
-                        <input type="submit" value="Submit">
-                    </form>
-
                 </div>
+
             </div>
 </body>
 
